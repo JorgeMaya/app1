@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.display{
+    background-color: white;
+    height: 20%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;;
+}
+
+.display input{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    float: left;
+    color: rgba(1,1,1,.4);
+    border: none;
+    outline: none;
+    font-size: 4em;
+    text-align: right;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.botones button{
+    width: 25%;
+    float: left;
+    height: 20%;
+    font-size: 2.5em;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: white;
+    transition: .1s all;
+}
+
+.btnNumeros{
+    background-color: #37474F;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.btnNumeros:after {
+    content: "";
+    background: #3B5C6F;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.btnNumeros:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.btnOperaciones{
+    background-color: #10A189;
+}
+.btnOperaciones:active{
+    background-color: #0FB99D;
+}
